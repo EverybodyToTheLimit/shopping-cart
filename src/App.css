@@ -1,0 +1,27 @@
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+
+}
+
+#nav-bar {
+  display:flex;
+  justify-content: space-between;
+  /* padding-left: 3rem; */
+  padding-right: 2rem;
+  min-height: 5rem;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

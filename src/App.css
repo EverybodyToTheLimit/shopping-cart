@@ -1,27 +1,105 @@
+:root {
+  --blue: #2B2D42;
+  --grey: #8D99AE;
+  --white: #EDF2F4;
+  --light-red: #EF233C;
+  --dark-red: #D80032;
+}
+
+#detail {
+  display: flex;
+  background-color: var(--white);
+  color: var(--blue);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 #nav-links {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
 
 }
 
 #nav-bar {
   display:flex;
   justify-content: space-between;
-  /* padding-left: 3rem; */
   padding-right: 2rem;
   min-height: 5rem;
+  background-color: var(--blue);
 }
 
 ul, li, a {
   list-style-type: none;
   text-decoration: none;
-  color: black;
+  color: var(--white);
+  font-size: x-large;
 }
 
-.App {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cards {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-nav{
+  display: flex;
+  max-height: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  background-size:contain;
+  height: 250px;
+  width: 250px;
+  align-self: center;
 }

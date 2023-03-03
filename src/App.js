@@ -6,9 +6,13 @@ import { Products } from './Components/Products';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from './Routes/route';
 import ErrorPage from './error-page';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [cart, setCart] = useState([])
+
 
   const router = createBrowserRouter([
     {
@@ -30,14 +34,14 @@ function App() {
         },
         {
           path: "cart",
-          element: <Cart />,
+          element: <Cart cart={cart} />,
         },
       ]
     },
   ]);
 
   return (
-    <div className="App">
+    <div className="container">
       <RouterProvider router={router} />
     </div>
   );

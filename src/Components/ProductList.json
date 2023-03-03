@@ -1,0 +1,85 @@
+{
+  "powertools": [
+    {
+      "name": "Drill",
+      "description": "A handheld tool used for drilling holes or driving screws into materials.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/CordlessDrill.jpg/1280px-CordlessDrill.jpg",
+      "features": [
+        "Variable speed control",
+        "Keyless chuck",
+        "Reverse switch"
+      ]
+    },
+    {
+      "name": "Circular Saw",
+      "description": "A handheld tool used for cutting wood and other materials with a rotating circular blade.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/USMC-02963.jpg/1280px-USMC-02963.jpg",
+      "features": [
+        "Adjustable depth settings",
+        "Bevel adjustment",
+        "Dust blower"
+      ]
+    },
+    {
+      "name": "Jigsaw",
+      "description": "A handheld tool used for cutting curved or intricate shapes in wood and other materials.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jigsaw_AccuMaster.jpg/1280px-Jigsaw_AccuMaster.jpg",
+      "features": [
+        "Variable speed control",
+        "Orbital action",
+        "Tool-free blade change"
+      ]
+    },
+    {
+      "name": "Reciprocating Saw",
+      "description": "A handheld tool used for cutting wood, metal, and other materials with a back-and-forth sawing motion.",
+      "image": "https://media.4rgos.it/i/Argos/4813011_R_Z001A?w=1500&h=880&qlt=70&fmt=webp",
+      "features": [
+        "Variable speed control",
+        "Tool-free blade change",
+        "Orbital action"
+      ]
+    },
+    {
+      "name": "Angle Grinder",
+      "description": "A handheld tool used for cutting, grinding, and polishing metal and other materials with a rotating disc.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/AngleGrinder.jpg",
+      "features": [
+        "Adjustable guard",
+        "Variable speed control",
+        "Spindle lock"
+      ]
+    },
+    {
+      "name": "Belt Sander",
+      "description": "A handheld tool used for sanding wood and other materials with a continuous sanding belt.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Belt_sander_bosch.jpg/1280px-Belt_sander_bosch.jpg",
+      "features": [
+        "Variable speed control",
+        "Dust collection port",
+        "Adjustable tracking"
+      ]
+    },
+    {
+      "name": "Random Orbital Sander",
+      "description": "A handheld tool used for sanding wood and other materials with a random circular sanding motion.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Random_orbit_sander.jpg/1280px-Random_orbit_sander.jpg",
+      "features": [
+        "Variable speed control",
+        "Dust collection port",
+        "Tool-free pad change"
+      ]
+    },
+    {
+      "name": "Biscuit Joiner",
+      "description": "A power tool used for making precision cuts and joints in wood with small football-shaped pieces of wood.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Lamello-top.jpg",
+      "features": [
+        "Adjustable fence",
+        "Dust collection port",
+        "Depth stop"
+      ]
+    }
+
+  ]
+}

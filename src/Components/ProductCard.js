@@ -13,7 +13,7 @@ export const ProductCard = ({name, description, image, handleSubmit}) => {
     }
 
     const submitPurchase = () => {
-        handleSubmit(name, quantity)
+        handleSubmit(name, description, image, quantity)
     }
   return (
     <div className="card">

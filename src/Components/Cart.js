@@ -1,18 +1,26 @@
 import React from 'react'
+import { CartCard } from './CartCard';
 
 export const Cart = ({cart}) => {
+
+  const listNames = cart.map((el, index) => 
+    <CartCard key={index} name={el.name} image={el.image} quantity={el.quantity}/>
+  );
+
   return (
-    <aside>
-    <h2>Shopping Cart</h2>
+    <div className="cart">
+    <h1>Shopping Cart</h1>
     {cart.length > 0 ? (
-      <ul>
-        {cart.map((product, index) => (
-          <li key={index}>{product}</li>
-        ))}
-      </ul>
+      <div className="cart-container-div">
+        <ul className='cart-list'>
+          {listNames}
+        </ul>
+        <button id="checkout-button">Checkout</button>
+      </div>
+    
     ) : (
       <p>Your cart is empty.</p>
     )}
-  </aside>
+    </div>
   )
 }

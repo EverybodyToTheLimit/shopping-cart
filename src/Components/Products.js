@@ -2,12 +2,13 @@ import React from 'react'
 import { ProductCard } from './ProductCard'
 import powertools from './ProductList.json'
 
-export const Products = () => {
+export const Products = ({handleCart}) => {
 
     const data = powertools.powertools
 
-    const handleSubmit = (name, quantity) => {
+    const handleSubmit = (name, description, image, quantity) => {
         console.log(name, quantity)
+        handleCart({"name": name, "description": description, "image": image, "quantity": quantity})
     }
 
 

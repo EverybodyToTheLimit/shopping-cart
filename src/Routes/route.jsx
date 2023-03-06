@@ -3,7 +3,7 @@ import {Outlet, Link} from "react-router-dom"
 export default function Root() {
     return (
       <>
-        <div>
+        <div id='nav-bar-container'>
           <nav id="nav-bar">
             <ul id="nav-links">
                 <li>

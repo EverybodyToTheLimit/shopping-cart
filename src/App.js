@@ -13,6 +13,10 @@ function App() {
 
   const [cart, setCart] = useState([])
 
+  const handleCart = (result) => {
+    setCart([...cart, result])
+  }
+
 
   const router = createBrowserRouter([
     {
@@ -30,7 +34,7 @@ function App() {
         },
         {
           path: "products",
-          element: <Products />,
+          element: <Products handleCart={handleCart}/>,
         },
         {
           path: "cart",

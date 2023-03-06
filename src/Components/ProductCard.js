@@ -16,17 +16,18 @@ export const ProductCard = ({name, description, image, handleSubmit}) => {
         handleSubmit(name, quantity)
     }
   return (
-    <div className="card">{name}
-    
+    <div className="card">
+
+        <div className="image" style={{ backgroundImage: `url(${image})` }}></div>
         <div className="card-description">
-            <img src={image}></img>
-            <div>{description}</div>
-        </div>
-        <div className="card-nav">
-            <button onClick={decrement}>-</button>
-            <p>{quantity}</p>
-            <button onClick={increment}>+</button>
-            <button onClick={submitPurchase}>Add to basket</button>
+            <div className="card-title">{name}</div>
+            <div className="card-details">{description}</div>
+            <div className="card-nav">
+                <button onClick={decrement}>-</button>
+                <p>{quantity}</p>
+                <button onClick={increment}>+</button>
+                <button onClick={submitPurchase}>Add</button>
+            </div>
         </div>
     </div>
   )

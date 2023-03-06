@@ -138,6 +138,9 @@ label {
   .cards{
     grid-template-columns: repeat(4, 1fr); 
   }
+  .cart-container-div {
+    flex-direction: column;
+  }
 }
 
 .image {

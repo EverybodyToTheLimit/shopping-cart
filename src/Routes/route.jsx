@@ -1,7 +1,8 @@
 import {Outlet, Link} from "react-router-dom"
 
-export default function Root() {
+export default function Root({cartNo}) {
     return (
+
       <>
         <div id='nav-bar-container'>
           <nav id="nav-bar">
@@ -17,7 +18,8 @@ export default function Root() {
               </li>
             </ul>
             <button id="cart">
-              <Link to={'cart'}>CART</Link>
+              <Link to={'cart'}>🛒</Link>
+              <div className="counter">{cartNo}</div>
               </button>
           </nav>
         </div>

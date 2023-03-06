@@ -42,8 +42,9 @@ const handleDelete = (deleteRequest) => {
 
   const router = createBrowserRouter([
     {
+      
       path: "/",
-      element: <Root sticky="top"/>,
+      element: <Root cartNo={cart.length}/>,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -53,6 +54,7 @@ const handleDelete = (deleteRequest) => {
         {
           path: "home",
           element: <Home />,
+          index: true,
         },
         {
           path: "products",
@@ -64,6 +66,10 @@ const handleDelete = (deleteRequest) => {
         },
       ]
     },
+      {
+      path: "",
+      element: <Home />
+      }
   ]);
 
   return (

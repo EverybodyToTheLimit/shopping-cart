@@ -139,7 +139,15 @@ label {
     grid-template-columns: repeat(4, 1fr); 
   }
   .cart-container-div {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  
+  #checkout-button {
+    max-height: 5rem;
+    position:absolute;
+    top: 6rem;
+    margin-left: 5rem;
+    position: sticky;
   }
 }
 
@@ -299,13 +307,8 @@ button:active {
 
 .cart-container-div {
   display: flex;
+  flex-direction: column;
 }
 
-#checkout-button {
-  max-height: 5rem;
-  position:absolute;
-  top: 6rem;
-  margin-left: 5rem;
-  position: sticky;
-}
+
 

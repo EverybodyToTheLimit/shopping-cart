@@ -17,7 +17,7 @@ export default function Root() {
               </li>
             </ul>
             <button id="cart">
-              <Link to={'cart'}>OO</Link>
+              <Link to={'cart'}>CART</Link>
               </button>
           </nav>
         </div>

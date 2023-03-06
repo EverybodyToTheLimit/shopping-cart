@@ -14,7 +14,9 @@ export const ProductCard = ({name, description, image, handleSubmit}) => {
 
     const submitPurchase = () => {
         handleSubmit(name, description, image, quantity)
+        setQuantity(0)
     }
+
   return (
     <div className="card">
 

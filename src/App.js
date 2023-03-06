@@ -14,8 +14,30 @@ function App() {
   const [cart, setCart] = useState([])
 
   const handleCart = (result) => {
-    setCart([...cart, result])
+
+      const exisitngIndex = cart.findIndex((item) => item.name === result.name)
+
+      if (exisitngIndex >= 0) {
+      const newQuantity = cart[exisitngIndex].quantity + result.quantity
+
+      const updatedCart = {...cart[exisitngIndex], quantity : newQuantity}
+
+      const newCart = [
+        ...cart.slice(0, exisitngIndex), updatedCart, ...cart.slice(exisitngIndex + 1)
+      ]; 
+      setCart(newCart);
+      }
+      else {
+      setCart([...cart, result])
+      }
   }
+
+const handleDelete = (deleteRequest) => {
+
+  const newArray = cart.filter((item) => item.name !== deleteRequest)
+  setCart(newArray)
+
+}
 
 
   const router = createBrowserRouter([
@@ -38,7 +60,7 @@ function App() {
         },
         {
           path: "cart",
-          element: <Cart cart={cart} />,
+          element: <Cart cart={cart} handleDelete={handleDelete}/>,
         },
       ]
     },

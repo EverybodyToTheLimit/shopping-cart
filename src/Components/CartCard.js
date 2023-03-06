@@ -1,6 +1,11 @@
 import React from 'react'
 
-export const CartCard = ({name, quantity, image}) => {
+export const CartCard = ({name, quantity, image, handleDelete}) => {
+
+    const deleteItem = () => {
+        handleDelete(name)
+    }
+
   return (
     <div className="cart-card">
         <div className='cart-item-image' style={{ backgroundImage: `url(${image})` }}></div>
@@ -9,7 +14,7 @@ export const CartCard = ({name, quantity, image}) => {
                 <div id='desc'>Item: {name}</div>
                 <div id='quant'>Quantity: {quantity}</div>
             </div>
-            <button>Remove</button>
+            <button onClick={deleteItem}>Remove</button>
         </div>
     </div>
   )

@@ -1,11 +1,16 @@
 import React from 'react'
 import { CartCard } from './CartCard';
 
-export const Cart = ({cart}) => {
+export const Cart = ({cart, handleDelete}) => {
+
+  const deleteitems = (name) => {
+    handleDelete(name)
+  }
 
   const listNames = cart.map((el, index) => 
-    <CartCard key={index} name={el.name} image={el.image} quantity={el.quantity}/>
+    <CartCard key={index} name={el.name} image={el.image} quantity={el.quantity} handleDelete={deleteitems}/>
   );
+
 
   return (
     <div className="cart">

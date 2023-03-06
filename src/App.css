@@ -301,3 +301,9 @@ button:active {
   margin-left: 5rem;
   position: sticky;
 }
+
+/* #cart {
+  display: flex;
+  max-width: 2rem;
+  max-height: 2rem;
+} */

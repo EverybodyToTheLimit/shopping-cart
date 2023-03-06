@@ -7,8 +7,8 @@ export const Products = ({handleCart}) => {
     const data = powertools.powertools
 
     const handleSubmit = (name, description, image, quantity) => {
-        console.log(name, quantity)
         handleCart({"name": name, "description": description, "image": image, "quantity": quantity})
+
     }
 
 

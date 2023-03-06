@@ -54,7 +54,6 @@ const handleDelete = (deleteRequest) => {
         {
           path: "home",
           element: <Home />,
-          index: true,
         },
         {
           path: "products",
@@ -64,12 +63,12 @@ const handleDelete = (deleteRequest) => {
           path: "cart",
           element: <Cart cart={cart} handleDelete={handleDelete}/>,
         },
+        {
+          index: true,
+          element: <Home />,
+        },
       ]
-    },
-      {
-      path: "",
-      element: <Home />
-      }
+    }
   ]);
 
   return (

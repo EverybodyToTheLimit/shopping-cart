@@ -43,7 +43,7 @@ const handleDelete = (deleteRequest) => {
   const router = createBrowserRouter([
     {
       
-      path: "/",
+      path: "/shopping-cart",
       element: <Root cartNo={cart.length}/>,
       errorElement: <ErrorPage />,
       children: [

@@ -76,6 +76,10 @@ a:visited {
   color: var(--white);
 }
 
+a {
+  color: var(--white);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -302,8 +306,3 @@ button:active {
   position: sticky;
 }
 
-/* #cart {
-  display: flex;
-  max-width: 2rem;
-  max-height: 2rem;
-} */
